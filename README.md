@@ -3,10 +3,9 @@
 
 - Car class (develop branch)
 
-1. Car 뼈대 세우기 (#1 make Car class)
-2. Car movePosition method 구현 (#2 make movePosition method)
+1. Car movePosition method 구현 (#1 make movePosition method)
 
 - Main class
 
-3. Main class 및 main method 및 다른 method 뼈대 세우기 (#3 make main class)
-4. input method(#4 make input method)
+2. Main class 및 main method 및 다른 method 뼈대 세우기 (#2 make main class)
+3. input method(#3 make input method)
