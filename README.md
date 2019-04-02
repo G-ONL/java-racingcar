@@ -18,4 +18,8 @@
 10. compare method(#10 make compare method)
 11. findMaximum method(#11 make findMaximum method)
 12. outputWinner method(#12 make outputWinner method)
+13. outputPosition method(#13 make outputPosition method)
+---
+14. Car class getName method 구현 (#14 make getName method)
+
 
