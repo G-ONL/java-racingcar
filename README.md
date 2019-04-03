@@ -8,6 +8,7 @@
 3. getPosition method 구현 (#3 make getPosition method)
 
 -------------------------- 추가
+
 12. Car class getName method 구현 (#12 make getName method)
 
 - Main class
