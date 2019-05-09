@@ -22,7 +22,7 @@ public class Main {
 
         }
 
-        public static void inputNames() throws IOException {
+        private static void inputNames() throws IOException {
                 boolean flag = false;
                 String[] name = {};
                 while(!flag) {
@@ -35,7 +35,7 @@ public class Main {
                 makeCars(name);
         }
 
-        public static boolean valid(String[] name){
+        private static boolean valid(String[] name){
                 for(int i =0;i<name.length;i++){
                         if( 5 < name[i].length()){
                                 System.out.println("자동차 이름은 5자 이하로만 작성해주세요.");
@@ -45,28 +45,28 @@ public class Main {
                 return true;
         }
 
-        public static void makeCars(String[] name) {
+        private static void makeCars(String[] name) {
                 cars = new Car[name.length];
                 for (int i = 0; i < name.length; i++) {
                         cars[i] = new Car(name[i]);
                 }
         }
 
-        public static void inputGameNumber() {
+        private static void inputGameNumber() {
                 System.out.println("시도할 회수는 몇회인가요?");
                 Scanner scanner = new Scanner(System.in);
                 n = scanner.nextInt();
                 System.out.println();
         }
 
-        public static void playRace() {
+        private static void playRace() {
                 System.out.println(" 실행 결과");
                 for (int i = 0; i < n; i++) {
                         gameOnce();
                 }
         }
 
-        public static void gameOnce() {
+        private static void gameOnce() {
                 for (int i = 0; i < cars.length; i++) {
                         cars[i].movePosition();
                         outputPosition(cars[i]);
@@ -74,7 +74,7 @@ public class Main {
                 System.out.println();
         }
 
-        public static void compare() {
+        private static void compare() {
                 for (int i = 0; i < cars.length; i++) {
                         findMaximum(cars[i].getPosition());
                 }
@@ -88,7 +88,7 @@ public class Main {
                 }
         }
 
-        public static void findMaximum(int pos) {
+        private static void findMaximum(int pos) {
                 if (pos > max) {
                         max = pos;
                         counter = 1;
@@ -100,7 +100,7 @@ public class Main {
                 }
         }
 
-        public static String arrayJoin(String glue, String array[]) {
+        private static String arrayJoin(String glue, String array[]) {
                 StringBuffer result = new StringBuffer();
 
                 for (int i = 0; i < array.length; i++) {
@@ -111,12 +111,12 @@ public class Main {
                 return result.toString();
         }
 
-        public static void outputWinner() {
+        private static void outputWinner() {
                 String winnerName = arrayJoin(",", winner);
                 System.out.println(winnerName + "가 최종 우승 했습니다.");
         }
 
-        public static void outputPosition(Car car) {
+        private static void outputPosition(Car car) {
                 System.out.print(car.getName() + ":");
                 for (int i = 0; i < car.getPosition(); i++) {
                         System.out.print("-");

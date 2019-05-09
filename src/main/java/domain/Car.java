@@ -20,10 +20,7 @@ public class Car {
         private boolean drawRandomNumber() { //뼈대 구축
                 Random random = new Random();
                 int n = random.nextInt(10);
-                if (n >= 4) {
-                        return true;
-                }
-                return false;
+                return n >= 4;
         }
 
         public int getPosition() {
